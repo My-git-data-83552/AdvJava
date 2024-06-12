@@ -13,7 +13,9 @@
 <body>
 	<form action="vote.jsp">
 		<h3>Online Voting</h3>
-		
+		Hello, ${lb.user.firstName} ${lb.user.lastName}
+		<hr />
+		Announcement: ${ ann.message }		<br/> <br/>
 		<jsp:useBean id="cl" class="com.sunbeam.beans.CandidateListBean"></jsp:useBean>
 		<c:forEach var="c" items="${ cl.candidateList() }"><input type="radio" name="candidate" value="${ c.id }"> ${ c.name } (${ c.party })<br />
 		</c:forEach>

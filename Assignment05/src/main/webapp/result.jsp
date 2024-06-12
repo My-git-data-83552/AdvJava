@@ -10,6 +10,7 @@
 <body>
 	<h2>${ initParam.Title }</h2>
 		<jsp:useBean id="rlb" class="com.sunbeam.beans.CandidateListBean"></jsp:useBean>
+		<form action="announcement.jsp">
 		<table border="1">
 			<thead>
 				<tr>
@@ -38,7 +39,10 @@
 				</c:forEach>
 			</tbody>
 		</table>
-		<br /> <br /> <a href="index.jsp">Logout</a>
+		
+		<br /> <br />
+		<input type="submit" value="Announce">
+		 <a href="index.jsp">Logout</a>
 	</form>
 </body>
 </html>
